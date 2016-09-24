@@ -42,9 +42,9 @@ def fibonacci(n):
 series= fibonacci(25)
 
 for ingredient in range(25):
-	print "\ningredient: ",ingredient
+	# print "\ningredient: ",ingredient
 	n = float(series[ingredient])
-	print int(n),": "
+	# print int(n),": "
 	# print type(series[ingredient])
 	first_cell = n
 	second_cell = n/2.0
@@ -56,8 +56,9 @@ for ingredient in range(25):
 	# cauldron[1][0] = third_cell
 	# cauldron[1][1] = fourth_cell
 	total_value = first_cell + second_cell + third_cell + fourth_cell
-	print "Sum: ",total_value
+	# print "Sum: ",total_value
 	if total_value == 2844678:
-		print "ingredient number: ", ingredient
-
-		
+		print "igredient: ",ingredient
+		print "ingredient value: ",series[ingredient]
+		print "sum: ",int(total_value)
+				
